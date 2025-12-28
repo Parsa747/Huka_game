@@ -1,0 +1,89 @@
+============================================================
+SPRINT 2 - POWER CARDS AND SPECIAL ACTIONS
+==========================================
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT2.001
+OWNER    : power-cards
+NAME     : Power card activation rules
+PRIORITY : HIGH
+ESTIMATE : 4 hours
+STATUS   : Planned
+DETAILS  :
+
+* Power cards are cards with value 7 or higher.
+* Power effects activate ONLY if:
+  a) the card is drawn from the deck, AND
+  b) the card is immediately discarded.
+* Power cards drawn from the discard pile do NOT activate.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT2.002
+OWNER    : power-cards
+NAME     : Look at your own card
+PRIORITY : MEDIUM
+ESTIMATE : 2 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may peek at one of their own face-down cards.
+* Card must be returned face down after viewing.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT2.003
+OWNER    : power-cards
+NAME     : Look at opponent's card
+PRIORITY : MEDIUM
+ESTIMATE : 2 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may peek at one face-down card belonging to another player.
+* Only the activating player gains this information.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT2.004
+OWNER    : power-cards
+NAME     : Blind trade ability
+PRIORITY : MEDIUM
+ESTIMATE : 4 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may swap any two face-down cards on the table.
+* No card may be viewed before or after the swap.
+* Cards may belong to any players.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT2.005
+OWNER    : power-cards
+NAME     : Informed trade (King / 13)
+PRIORITY : HIGH
+ESTIMATE : 6 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may look at:
+  a) one of their own cards, AND
+  b) one opponent's card.
+* Player then chooses whether to swap the two cards.
+
+---

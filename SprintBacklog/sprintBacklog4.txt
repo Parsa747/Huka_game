@@ -1,0 +1,85 @@
+============================================================
+SPRINT 4 - END GAME AND SCORING
+===============================
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT4.001
+OWNER    : endgame
+NAME     : Call Cambio action
+PRIORITY : HIGH
+ESTIMATE : 2 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may call "Cambio" instead of taking a turn.
+* Player must believe they have the lowest total score.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT4.002
+OWNER    : endgame
+NAME     : Final round execution
+PRIORITY : HIGH
+ESTIMATE : 2 hours
+STATUS   : Planned
+DETAILS  :
+
+* After Cambio is called, all other players receive
+  exactly one final turn.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT4.003
+OWNER    : scoring
+NAME     : Score calculation and winner determination
+PRIORITY : HIGH
+ESTIMATE : 4 hours
+STATUS   : Planned
+DETAILS  :
+
+* All cards are revealed.
+* Card values are summed per player.
+* Player with the lowest total score wins.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT4.004
+OWNER    : scoring
+NAME     : Cambio tie-breaker rule
+PRIORITY : MEDIUM
+ESTIMATE : 1 hour
+STATUS   : Planned
+DETAILS  :
+
+* If the caller ties with another player,
+  the other player wins.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT4.005
+OWNER    : penalty
+NAME     : Penalty for incorrect Cambio call
+PRIORITY : HIGH
+ESTIMATE : 2 hours
+STATUS   : Planned
+DETAILS  :
+
+* If the caller does not have the lowest score:
+  a) they lose the round, AND
+  b) they start the next game with one extra card.
+
+---

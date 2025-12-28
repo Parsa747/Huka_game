@@ -1,0 +1,92 @@
+============================================================
+SPRINT 1 - CORE GAMEPLAY RULES
+==============================
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT1.001
+OWNER    : gameplay
+NAME     : Initial card dealing and table layout
+PRIORITY : HIGH
+ESTIMATE : 1 day
+STATUS   : Planned
+DETAILS  :
+
+* Deal exactly 4 cards to each player.
+* All cards are face down.
+* Cards must be arranged in a 2x2 square in front of each player.
+* No player may view cards at this stage.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT1.002
+OWNER    : gameplay
+NAME     : Memorization phase (3-2-1 Look)
+PRIORITY : HIGH
+ESTIMATE : 4 hours
+STATUS   : Planned
+DETAILS  :
+
+* All players count down together: "3, 2, 1, Look".
+* Each player may look at ONLY their bottom two cards.
+* Cards may be viewed once and must be returned face down.
+* No discussion or signaling is allowed.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT1.003
+OWNER    : gameplay
+NAME     : Turn-based draw system
+PRIORITY : HIGH
+ESTIMATE : 1 day
+STATUS   : Planned
+DETAILS  :
+
+* Turns proceed clockwise.
+* On a turn, a player may draw from:
+  a) the draw pile, OR
+  b) the top of the discard pile.
+* Only one card may be drawn per turn.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT1.004
+OWNER    : gameplay
+NAME     : Swap drawn card with face-down card
+PRIORITY : HIGH
+ESTIMATE : 6 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may replace any one of their face-down cards
+  with the drawn card.
+* The replaced card is immediately discarded face up.
+* Player may not look at the replaced card before discarding.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT1.005
+OWNER    : gameplay
+NAME     : Immediate discard option
+PRIORITY : HIGH
+ESTIMATE : 3 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may discard the drawn card without swapping.
+* No other action is required unless the card is a power card.
+
+---

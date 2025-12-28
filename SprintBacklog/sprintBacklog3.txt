@@ -1,0 +1,54 @@
+============================================================
+SPRINT 3 - SNAP MECHANIC AND PENALTIES
+======================================
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT3.001
+OWNER    : snap
+NAME     : Snap matching card from discard pile
+PRIORITY : HIGH
+ESTIMATE : 6 hours
+STATUS   : Planned
+DETAILS  :
+
+* At any time, a player may snap their own card
+  if it matches the top discard pile card.
+* Snapped card is removed from play.
+
+---
+
+---
+
+TYPE     : FEATURE
+ID       : FEAT3.002
+OWNER    : snap
+NAME     : Snap opponent's matching card
+PRIORITY : MEDIUM
+ESTIMATE : 6 hours
+STATUS   : Planned
+DETAILS  :
+
+* Player may snap an opponent's matching card.
+* Opponent receives:
+  a) one card from the snapping player, AND
+  b) one penalty card.
+
+---
+
+---
+
+TYPE     : BUG
+ID       : BUG3.003
+OWNER    : snap
+NAME     : Incorrect snap penalty enforcement
+PRIORITY : HIGH
+ESTIMATE : 3 hours
+STATUS   : Planned
+DETAILS  :
+
+* If a snap attempt is incorrect:
+  a) snapping player immediately draws a penalty card.
+
+---
