@@ -8,24 +8,13 @@ public class Deck {
 
     public Deck(){
         this.cards = new ArrayList<>();
-    }
-    public void creatDeck()
-    {
-        ArrayList<String> names = new ArrayList<>();
-        names.add("King");
-        names.add("Queen");
-        names.add("Soldiers");
-
-        for(String name: names){
-            for(int i = 1; i <= 10; i++){
-
-                cards.add(new Card(name,i));
+        ArrayList<String> signs = new ArrayList<>("Spade", "Diamond", "Club", "Heart");
+        for (String name: signs){
+            for (int i = 1; i<11; i++){
+                Card theCard = new Card(name, i);
+                cards.add(theCard);
             }
         }
-        cards.add(new Card("Jocker",-1));
-        cards.add(new Card("Jocker",-1));
-
-
     }
     public Card draw()
     {
