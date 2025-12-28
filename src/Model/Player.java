@@ -10,7 +10,7 @@ public class Player {
     private String name;
     private int playerHandValue;
 
-    public Player(String name, String playerHandValue)
+    public Player(String name)
     {
         playerCards = new ArrayList<>();
         this.name = name;
@@ -22,7 +22,11 @@ public class Player {
         this.playerCards.add(card);
     }
     public int GetPlayerCardValues(){
-        return this.playerHandValue;
+        int sum = 0;
+        for(Card card: this.playerCards){
+            sum += card.getValue();
+        }
+        return sum;
     }
 
     public void PlayerReceiveCard(Card card)
@@ -36,7 +40,9 @@ public class Player {
         {
             if(card1.getValue() == cardValue){
                 this.playerCards.remove(card);
+                break;
             }
+
         }
     }
 
