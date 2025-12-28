@@ -8,7 +8,7 @@ public class Deck {
 
     public Deck(){
         this.cards = new ArrayList<>();
-        ArrayList<String> signs = new ArrayList<>("Spade", "Diamond", "Club", "Heart");
+        ArrayList<String> signs = new ArrayList<>(){"Spade", "Diamond", "Club", "Heart"};
         for (String name: signs){
             for (int i = 1; i<11; i++){
                 Card theCard = new Card(name, i);
