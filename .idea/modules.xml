@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/Controller/Controller.iml" filepath="$PROJECT_DIR$/src/Controller/Controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Huka_game.iml" filepath="$PROJECT_DIR$/.idea/Huka_game.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Model/Model.iml" filepath="$PROJECT_DIR$/src/Model/Model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/View/View.iml" filepath="$PROJECT_DIR$/src/View/View.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
     </modules>
   </component>
