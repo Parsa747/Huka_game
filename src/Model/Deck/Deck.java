@@ -29,12 +29,15 @@ public class Deck {
     }
     public Card draw()
     {
-
+        if(this.cards.isEmpty()){
+            System.out.println("The deck is empty");
+            return new Card("0",0);
+        }
         Random random = new Random();
         int randomZeroBased = random.nextInt(this.cards.size());
         int randomOneBased = randomZeroBased + 1;
-
-        return this.cards.get(randomZeroBased);
+        Card SelectedCard = this.cards.remove(randomOneBased);
+        return SelectedCard;
 
     }
 }
