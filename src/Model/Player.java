@@ -17,10 +17,6 @@ public class Player {
         this.playerHandValue = 0;
 
     }
-    public void PlayerInitializer(ArrayList<Card> card)
-    {
-        this.playerCards.addAll(card);
-    }
     public int GetPlayerCardValues(){
         int sum = 0;
         for(Card card: this.playerCards){
