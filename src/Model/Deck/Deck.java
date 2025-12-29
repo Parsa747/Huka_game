@@ -1,5 +1,6 @@
 package Model.Deck;
 import java.util.Random;
+import java.util.Stack;
 import java.util.random.*;
 import java.util.ArrayList;
 
@@ -21,11 +22,14 @@ public class Deck {
             }
         }
     }
+    public Stack<Card> recieveStackCards(Stack<Card> c){
+        return c;
+    }
     public Card draw()
     {
         if(this.cards.isEmpty()){
             System.out.println("The deck is empty");
-            return new Card("0",0);
+            return new
         }
         Random random = new Random();
         int randomZeroBased = random.nextInt(this.cards.size());

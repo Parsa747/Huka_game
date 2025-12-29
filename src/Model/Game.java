@@ -3,11 +3,14 @@ import Model.Deck.Deck;
 import Model.Deck.Card;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Game {
+    private int turn;
     private Deck deck;
     private int PlayerTurn;
     private ArrayList<Player> players = new ArrayList<>();
+    private Stack<Card> stackCard = new Stack<>();
 
 
     public Game() {
@@ -28,7 +31,7 @@ public class Game {
             }
         }
         PlayerInitlizer();
-
+        turn = 1;
 
     }
 
