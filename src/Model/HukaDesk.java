@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Game {
+public class HukaDesk {
     private int turn;
     private Deck deck;
     private int PlayerTurn;
@@ -13,7 +13,7 @@ public class Game {
     private Stack<Card> stackCard = new Stack<>();
 
 
-    public Game() {
+    public HukaDesk() {
         deck = new Deck();
         while(true) {
             Scanner scanner = new Scanner(System.in);
