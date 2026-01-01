@@ -8,40 +8,41 @@ import java.util.Stack;
 public class HukaDesk {
     private int turn;
     private Deck deck;
-    private int PlayerTurn;
+    public static int PlayerTurn;
     private ArrayList<Player> players = new ArrayList<>();
+    public static int NumberOfPlayer;
     private Stack<Card> stackCard = new Stack<>();
 
 
     public HukaDesk() {
-        deck = new Deck();
-        while(true) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("How many Player are in the game?");
-            int number = scanner.nextInt();
-
-            if (number > 6 ||  number < 2) {
-                System.out.println("Try again!");
-            }else{
-                for(int i = 0; i < number; i++) {
-                    players.add(new Player("player "+i));
-
-                }
-                break;
-            }
-        }
-        PlayerInitlizer();
-        turn = 1;
 
     }
 
-    private void PlayerInitlizer()
-    {
-        for(Player player: players)
+    public boolean MoveOptions(Player player){
+        Card card = deck.draw();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("discard (d), change (c): ");
+        String name = scanner.nextLine(); // Step 3: Use nextLine()
+        if(name == "d")
         {
-            for(int i =0; i< 4 ; i++){
-                player.PlayerReceiveCard(deck.draw());
+            stackCard.add(card);
+        }
+        if(name == "c")
+        {
+            for(Card c: player.getPlayerCards())
+            {
+                System.out.println(c);
+
             }
+             scanner = new Scanner(System.in);
+            System.out.print("which index: ");
+            int index = scanner.nextInt();
+            if(index < player.getPlayerCards().size())
+            {
+                player.getPlayerCards().remove(index);
+                player.getPlayerCards().add(index, card);
+            }
+            index +=1;
         }
     }
 

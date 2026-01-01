@@ -3,6 +3,7 @@ package Model;
 
 import Model.Deck.Card;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Player {
@@ -41,7 +42,10 @@ public class Player {
 
         }
     }
-    public void
+    public ArrayList<Card> getPlayerCards()
+    {
+        return this.playerCards;
+    }
 
 
 
