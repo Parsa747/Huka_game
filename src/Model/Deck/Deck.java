@@ -16,25 +16,26 @@ public class Deck {
         signs.add("Diamond");
 
         for (String name: signs){
-            for (int i = 1; i<11; i++){
+            // 11: Jack, 12: Queen, 13: King
+            for (int i = 1; i<14; i++){
                 Card theCard = new Card(name, i);
                 cards.add(theCard);
             }
         }
     }
-    public Stack<Card> recieveStackCards(Stack<Card> c){
-        return c;
-    }
-    public Card draw()
-    {
+    Stack<Card> theStack = new Stack<>();
+    public Card draw() {
+
+
         if(this.cards.isEmpty()){
-            System.out.println("The deck is empty");
-            return new
+            for (Card c : theStack) {
+                this.cards.add(c);
+            }
         }
         Random random = new Random();
-        int randomZeroBased = random.nextInt(this.cards.size());
-        int randomOneBased = randomZeroBased + 1;
-        Card SelectedCard = this.cards.remove(randomOneBased);
+        int randomOneBased = random.nextInt(this.cards.size()) + 1;
+        Card SelectedCard = this.cards.get(randomOneBased);
+        cards.remove(SelectedCard);
         return SelectedCard;
 
     }
